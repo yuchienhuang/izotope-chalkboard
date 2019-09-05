@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>My iZotope App</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+      <link rel="stylesheet" href="/static/css/style.css">
+      <link rel="stylesheet" href="https://www.izotope.com/etc/clientlibs/izotope/core.min.a28bf8545f7c5e12d4e93bfd0d05f008.css" type="text/css">
+      <link rel="shortcut icon" href="/static/cloud.icon" type="image/x-icon">
+      <link rel="icon" href="/static/cloud.icon" type="image/x-icon">
+   </head>
+   <body>
+      <div class=" card text-white" style="background-color:black">
+         <div id="box">
+            <div class="row" >
+               <div class="col2"><img class="image-replacement" src="/static/images/logo.gif" /></div>
+               <div class="col10"><img class="image-replacement" src="/static/images/title.gif"/></div>
+            </div>
+         </div>
+      </div>
+      <div class="transparent-primary-navigation">
+         <div class="navbar-wrapper">
+            <div class="container">
+               <nav class="navbar navbar-default navbar-static-top" role="navigation">
+                  <div class="header-block">
+                     <ul id="mm-nav" class="mm-nav nav navbar-nav">
+                        <!-- inserted NavbarList -->
+                     </ul>
+                  </div>
+               </nav>
+            </div>
+         </div>
+      </div>
+      <div id="navbox"></div>
+      <div class="container feed-container">
+         <div class="row">
+            <div id="stories" class="col">
+
+               <p>Welcome to this web page that I set up specially  for my
+                  <a href="https://www.izotope.com" target="_blank">iZotope</a> Cloud Engineering application!</p>
+               <p>My name is Yu-Chien Huang.  I am a recent grad of MIT Physics Ph.D. (2019 Sept degree list), who is a music enthusiast and a hockey player.
+                  Ever since my iZotope company visit with Prof. Eran Egozy last fall term when I took his class, Fundamentals of Music Processing (21M.387),
+                  I knew that iZotope would definitely be one of the music technology companies that I would LOVE to work for.
+               </p>
+               <p>I am a fast learner and I persevere in things that I care about.
+                  Starting off as a theretical physicist,   in an eight-week data science training program this spring,
+                  I managed to build a Flask application for a classification model that I designed and developped for artists to predict future popular songs. I really enjoyed coding to implement the data science project that combined my dual love for music and technology.
+                  (In case you would be interested in my music web-app, please click
+
+                  <a href="https://fun-with-music.herokuapp.com" target="_blank">here</a>
+
+                  for the link; and my project code  is hosted in my GitHub repo
+
+                  <a href="https://github.com/yuchienhuang/hit-song-predictor" target="_blank">here</a>.)
+               </p>
+               <p>Therefore, it is my believe that even if I may not already be the perfect person in terms of the n years of industry experience on the job qualification list, where n=2 or 3,  the solid training I gained through the MIT Ph.D. enables me to pick things up quickly and efficiently,
+                  and I am always willing to learn and try out new technologies; more importantly, I have the passion for contributing to the music audio industry, and I think iZotope is an ideal environment for this area.
+                  To get myself familiar to AWS for this role, I signed up an account and made this simple Express app instance (repo link here) deployed to Node.js Elastic Beanstalk environments -
+                  Please feel free to scrawl on my wIZ quOTes Of PErseverance chalkboard  :)</p>
+
+            </div>
+         </div>
+      </div>
+      <div id="app"></div>
+   </body>
+   <script src="/socket.io/socket.io.js"></script>
+   <script src="/static/js/api.js"></script>
+   <script src="/static/js/navbar.js"></script>
+   <script src="/static/js/feed.js"></script>
+   <script src="/static/js/index.js"></script>
+</html>
